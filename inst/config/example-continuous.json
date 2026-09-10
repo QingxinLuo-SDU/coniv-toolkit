@@ -1,0 +1,35 @@
+{
+  "outcome_type": "continuous",
+  "observational_path": "../extdata/observational-continuous.csv",
+  "reference_path": "../extdata/reference-continuous.csv",
+  "output_dir": "../../example-output/continuous",
+  "columns": {
+    "center": "centre",
+    "exposure": "X",
+    "outcome": "Y"
+  },
+  "candidate_variables": ["Z1", "Z2"],
+  "strategies": [
+    "IV_single_same",
+    "IV_single_diff",
+    "IV_multi_same",
+    "IV_multi_diff"
+  ],
+  "selection": {
+    "mode": "provided",
+    "shared": ["Z1", "Z2"],
+    "center_specific": {
+      "A": ["Z1", "Z2"],
+      "B": ["Z1", "Z2"]
+    }
+  },
+  "estimation": {
+    "hc_type": "HC1",
+    "min_n": 10,
+    "min_abs_pi": 0.001,
+    "weight_type_multi": "diag_delta",
+    "ridge_relative": 0.00000001
+  },
+  "random_seed": 20260910
+}
+

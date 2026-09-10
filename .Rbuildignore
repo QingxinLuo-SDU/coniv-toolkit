@@ -1,0 +1,6 @@
+^\.agents$
+^\.check$
+^\.cli-probe$
+^\.test-lib$
+^CITATION\.cff$
+

@@ -1,0 +1,9 @@
+.Rhistory
+.RData
+.Ruserdata
+.test-lib/
+.check/
+.cli-probe/
+example-output/
+*.Rcheck/
+*.tar.gz

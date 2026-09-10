@@ -1,0 +1,16 @@
+Package: coniv
+Type: Package
+Title: Multicenter Calibration Outcome Natural Instrumental Variable Estimation
+Version: 0.1.0
+Authors@R: person("CON-IV", "Authors", email = "coniv-authors@example.invalid", role = c("aut", "cre"))
+Description: Estimates common causal effects across observational centers that
+    share a randomized or interventional reference sample. The implementation
+    supports continuous outcomes and binary-outcome risk differences, four
+    calibration-variable strategies, influence-function covariance estimation,
+    and feasible generalized least squares with full cross-center covariance.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: jsonlite
+RoxygenNote: 7.3.2
+

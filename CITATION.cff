@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the version used. Replace the project-level author placeholder with approved author metadata before public release."
+title: "coniv: Multicenter Calibration Outcome Natural Instrumental Variable Estimation"
+type: software
+version: 0.1.0
+date-released: 2026-09-10
+authors:
+  - name: "CON-IV Authors (metadata pending)"
+license: MIT
+
