@@ -6,7 +6,7 @@ The repository is not currently published to CRAN, GitHub, Zenodo, or another re
 
 For a manuscript before release, an accurate statement is:
 
-> The CON-IV implementation was developed as an R package with a command-line interface. The analysis version, configuration, software versions, selected variables, covariance matrices, diagnostics, and GLS weights are recorded in the run outputs. Public repository and archival identifiers will be added after release.
+> The MCM-CONIV implementation was developed as an R package with a command-line interface. The analysis version, configuration, software versions, selected variables, covariance matrices, diagnostics, and GLS weights are recorded in the run outputs. Public repository and archival identifiers will be added after release.
 
-For a future release, replace the final sentence with the actual immutable release URL and archival identifier, and replace the pending author/copyright metadata in `DESCRIPTION`, `CITATION.cff`, and `LICENSE`.
+For a future release, replace the final sentence with the actual immutable release URL and archival identifier.
 

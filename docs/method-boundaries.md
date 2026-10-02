@@ -2,7 +2,7 @@
 
 ## Estimand and identification
 
-For each observational center and calibration variable, the core identity is
+For each observational center and CON-IV variable, the core identity is
 
 `theta = (gamma_O - gamma_R) / pi`,
 
@@ -10,7 +10,7 @@ where `gamma_O` is the observational marginal outcome association, `gamma_R` is 
 
 For binary outcomes, `theta` is estimated on the risk-difference scale through linear probability slopes. A latent data-generating coefficient such as `beta_XY` is not this estimand.
 
-The estimator depends on the scientific CON-IV assumptions, including transportability of the non-treatment outcome association from the shared reference population to each center, exposure independence in the randomized/interventional reference, and nonzero observational exposure associations. Software diagnostics cannot verify these assumptions.
+The estimator depends on the scientific MCM-CONIV assumptions, including transportability of the non-treatment outcome association from the shared reference population to each center, exposure independence in the randomized/interventional reference, and nonzero observational exposure associations. Software diagnostics cannot verify these assumptions.
 
 ## Variance and multicenter combination
 

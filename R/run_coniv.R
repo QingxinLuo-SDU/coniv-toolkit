@@ -1,7 +1,7 @@
-#' Run a multicenter CON-IV analysis
+#' Run an MCM-CONIV analysis
 #'
 #' @param config A configuration list or a path to a JSON configuration file.
-#' @return A structured CON-IV analysis result.
+#' @return A structured MCM-CONIV analysis result.
 #' @export
 run_coniv <- function(config) {
   config <- read_coniv_config(config)
@@ -174,7 +174,7 @@ run_coniv <- function(config) {
   result
 }
 
-#' Write CON-IV result files
+#' Write MCM-CONIV result files
 #'
 #' @param result A result returned by [run_coniv()].
 #' @param output_dir Output directory.

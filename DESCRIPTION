@@ -1,13 +1,15 @@
 Package: coniv
 Type: Package
-Title: Multicenter Calibration Outcome Natural Instrumental Variable Estimation
+Title: Multicenter Multiple Confounding Instrumental Variables (MCM-CONIV) Model
 Version: 0.1.0
-Authors@R: person("CON-IV", "Authors", email = "coniv-authors@example.invalid", role = c("aut", "cre"))
-Description: Estimates common causal effects across observational centers that
-    share a randomized or interventional reference sample. The implementation
+Authors@R: person("Qingxin", "Luo", email = "luoqingxin@mail.sdu.edu.cn", role = c("aut", "cre", "cph"))
+Description: Implements the multicenter multiple confounding instrumental
+    variables (MCM-CONIV) model, which estimates a common causal effect across
+    observational centers that share one reference sample. The implementation
     supports continuous outcomes and binary-outcome risk differences, four
-    calibration-variable strategies, influence-function covariance estimation,
-    and feasible generalized least squares with full cross-center covariance.
+    strategies for confounding instrumental (CON-IV) variables,
+    influence-function covariance estimation, and feasible generalized least
+    squares with the full cross-center covariance.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.1.0)

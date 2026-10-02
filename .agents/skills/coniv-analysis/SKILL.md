@@ -1,9 +1,9 @@
 ---
 name: coniv-analysis
-description: Run or interpret this repository's multicenter CON-IV analysis for continuous outcomes or binary risk differences using observational centers and one shared randomized/interventional reference sample. Use when asked to configure, execute, troubleshoot, or explain the four CON-IV strategies, shared-reference covariance, FGLS weights, diagnostics, or output files in this project.
+description: Run or interpret this repository's MCM-CONIV (multicenter multiple confounding instrumental variables) analysis for continuous outcomes or binary risk differences using observational centers and one shared reference sample. Use when asked to configure, execute, troubleshoot, or explain the four CON-IV strategies, shared-reference covariance, FGLS weights, diagnostics, or output files in this project.
 ---
 
-# CON-IV analysis
+# MCM-CONIV analysis
 
 Use the installed `coniv` R package as the only calculation source. Do not reproduce its formulas in another script or calculate replacement estimates from output tables.
 

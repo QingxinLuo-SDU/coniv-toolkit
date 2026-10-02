@@ -21,13 +21,13 @@ estimate_coniv_center <- function(observed, reference_info, iv_names,
                                   center_id) {
   iv_names <- unique(as.character(iv_names))
   if (!length(iv_names)) {
-    return(list(valid = FALSE, reason = "No calibration variables.",
+    return(list(valid = FALSE, reason = "No CON-IV variables.",
                 center = center_id, IV_names = character()))
   }
   if (!all(iv_names %in% names(observed)) ||
       !all(iv_names %in% names(reference_info$beta))) {
     return(list(valid = FALSE,
-                reason = "Calibration variables are absent or misordered in the reference information.",
+                reason = "CON-IV variables are absent or misordered in the reference information.",
                 center = center_id, IV_names = iv_names))
   }
 

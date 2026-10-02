@@ -21,7 +21,7 @@ provided_iv_lists <- function(config, centers, strategy) {
   } else if (strategy == "IV_multi_diff") {
     iv_lists <- lapply(center_specific[centers], as.character)
   } else {
-    coniv_abort(sprintf("Unknown CON-IV strategy: %s", strategy))
+    coniv_abort(sprintf("Unknown MCM-CONIV strategy: %s", strategy))
   }
 
   diagnostics <- do.call(rbind, lapply(centers, function(center_id) {

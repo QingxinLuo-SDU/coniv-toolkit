@@ -57,14 +57,14 @@ main <- function() {
   result <- coniv::run_coniv(args$config)
   output_dir <- resolve_output(result, args$output)
   written <- coniv::write_coniv_results(result, output_dir)
-  cat(sprintf("CON-IV analysis complete: %s\n", written))
+  cat(sprintf("MCM-CONIV analysis complete: %s\n", written))
   invisible(0L)
 }
 
 status <- tryCatch(
   main(),
   error = function(error) {
-    message(sprintf("CON-IV analysis failed: %s", conditionMessage(error)))
+    message(sprintf("MCM-CONIV analysis failed: %s", conditionMessage(error)))
     1L
   }
 )

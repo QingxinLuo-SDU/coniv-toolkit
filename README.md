@@ -1,6 +1,6 @@
 # coniv
 
-`coniv` is an experimental R package for common-effect CON-IV estimation across multiple observational centers that share one randomized or interventional reference sample. It supports continuous outcomes and binary-outcome risk differences, four calibration-variable strategies, influence-function covariance estimation, and feasible generalized least squares (FGLS) using the full cross-center covariance matrix.
+`coniv` is an experimental R package implementing the multicenter multiple confounding instrumental variables (MCM-CONIV) model, which estimates a common effect across multiple observational centers that share one reference sample. It supports continuous outcomes and binary-outcome risk differences, four calibration-variable strategies, influence-function covariance estimation, and feasible generalized least squares (FGLS) using the full cross-center covariance matrix.
 
 Version 0.1.0 is package-first, not CRAN-released. It uses synthetic examples only and should be independently reviewed before substantive clinical or policy use.
 
@@ -41,10 +41,10 @@ coniv::write_coniv_results(result, "example-output/binary")
 
 ## What the four strategies mean
 
-- `IV_single_same`: one common calibration variable across centers.
-- `IV_single_diff`: one center-specific calibration variable per center.
-- `IV_multi_same`: one common calibration-variable set across centers.
-- `IV_multi_diff`: center-specific calibration-variable sets.
+- `IV_single_same`: one common confounding instrumental (CON-IV) variable across centers.
+- `IV_single_diff`: one center-specific CON-IV variable per center.
+- `IV_multi_same`: one common set of CON-IV variables across centers.
+- `IV_multi_diff`: center-specific sets of CON-IV variables.
 
 The four strategies share one identification and estimation framework. With a single variable supplied everywhere, all four intentionally reduce to the same estimator.
 
@@ -71,7 +71,7 @@ Validation covers a hand-calculated single-variable identity, single-variable de
 
 ## Citation and license
 
-Citation metadata are in `CITATION.cff`. The author identity is deliberately marked as a project-level placeholder until the maintainers provide approved English names and identifiers. Do not use the placeholder as a final manuscript author list.
+Citation metadata are in `CITATION.cff`. Author and maintainer: Qingxin Luo (luoqingxin@mail.sdu.edu.cn).
 
-This project is distributed under the MIT License. The copyright holder in `LICENSE` must likewise be replaced with the approved legal holder before a public release.
+This project is distributed under the MIT License; see `LICENSE`.
 
