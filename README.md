@@ -2,6 +2,10 @@
 
 `coniv` is an experimental R package implementing the multicenter multiple confounding instrumental variables (MCM-CONIV) model, which estimates a common effect across multiple observational centers that share one reference sample. It supports continuous outcomes and binary-outcome risk differences, four calibration-variable strategies, influence-function covariance estimation, and feasible generalized least squares (FGLS) using the full cross-center covariance matrix.
 
+The workflow of the model, the simulation studies, and the empirical application is shown below.
+
+![Figure 1](figure1.png)
+
 Version 0.1.0 is package-first, not CRAN-released. It uses synthetic examples only and should be independently reviewed before substantive clinical or policy use.
 
 ## Install from a clone
